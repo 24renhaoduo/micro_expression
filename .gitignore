@@ -1,0 +1,25 @@
+.venv/
+python/
+# ↑ 便携解释器 430MB，不该进仓库；新机器按 README 用自带 python\python.exe 重建 venv 即可。
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+instance/*.db
+uploads/*
+!uploads/.gitkeep
+outputs/*
+!outputs/.gitkeep
+outputs/reports/*
+outputs/analysis/*
+outputs/features/*
+outputs/frames/*
+test_data/
+# ↑ 整目录忽略：Lab-SMEM 是 6.9GB 真人自发微表情图像序列，
+#   既不该进仓库（体积），也不该进仓库（隐私与数据授权范围）。
+test_data/*.mp4
+test_data/*.avi
+test_data/*.mov
+test_data/*.mkv
+.env
+*.log
